@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Proof Of Life</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            Welcome to the world
+        </h1>
+    </header>
+    <main>
+        <h2>Search Results</h2>
+
+        <% articles.forEach(article => { %>
+        <li>
+            <div class="card">
+                <h3> <%= article.title%> </h3>
+                <p><%= article.abstract%></p>
+                <a target="_blank" href="<%= article.url%>">Read the Article</a>
+                <h6><%= article.publish%></h6>
+            </div>
+            <form action="/add" method="post">
+
+                <button type="submit">Select this quote</button>
+            </form>
+        </li>
+        <% }) %>
+    </main>
+    <footer>
+        <small>
+            &copy; Copyright 2020,
+        </small>
+    </footer>
+</body>
+
+</html>

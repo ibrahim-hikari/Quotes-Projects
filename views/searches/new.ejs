@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Looking for an article</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Abril+Fatface|Acme|Amatic+SC|Dancing+Script|Indie+Flower|Lobster|Modak|Pacifico|Patrick+Hand|Righteous|Yellowtail|ZCOOL+XiaoWei&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/new.css">
+</head>
+
+<body>
+    <%- include('../layout/header')%>
+    <main>
+        <h2>What do you wanna read <%= user%> ?</h2>
+        <div>
+            <form action="/searches" method="POST">
+                <input type="hidden" name="userName" value="<%= user%>">
+                <label for="userInput">
+                    <input type="text" name="keyword"
+                        placeholder="                                     Search NYT articles" class="search" required>
+                </label>
+                <div class="submit">
+                    <input type="submit" value="Search For Article"></input>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer></footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</body>
+
+</html>

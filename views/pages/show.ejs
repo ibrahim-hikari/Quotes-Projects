@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Your search results</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/show.css">
+</head>
+
+<body>
+    <%- include('../layout/header')%>
+    <main>
+        <h2>Search Results</h2>
+
+        <% articles.forEach(article => { %>
+        <li>
+            <div class="card">
+                <h3> <%= article.title%> </h3>
+                <p><%= article.abstract%></p>
+                <h4><%= article.publish%></h4>
+                <a target="_blank" href="<%= article.url%>">Read the Article</a>
+                <form action="/add" method="post">
+                    <input type="hidden" name="article" value="<%= article.title%>">
+                    <input type="hidden" name="url" value="<%= article.url%>">
+                    <input type="hidden" name="abstract" value="<%= article.abstract%>">
+                    <input type="hidden" name="publish" value="<%= article.publish%>">
+
+                    <input type="hidden" name="userName" value="<%= user%>">
+                    <button type="submit">Add it to your library</button>
+                </form>
+            </div>
+        </li>
+        <% }) %>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

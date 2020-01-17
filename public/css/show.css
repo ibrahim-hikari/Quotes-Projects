@@ -1,0 +1,40 @@
+body {
+    background-color: darkcyan;
+}
+
+h2 {
+    font-family: 'ZCOOL XiaoWei', serif;
+    font-size: xx-large;
+    margin-top: 4%;
+}
+
+li {
+    list-style-type: none;
+    margin: 2% 0%;
+}
+
+.card {
+    border: solid;
+    left: 25%;
+    position: relative;
+    width: 50%;
+}
+
+p {
+    font-size: larger;
+    margin: 2% 0%;
+}
+
+h4{
+    margin: 2% 0%;
+}
+
+a{
+    font-size: x-large;
+}
+
+button{
+    background-color: darkgoldenrod;
+    font-size: x-large;
+    margin: 2%;
+}

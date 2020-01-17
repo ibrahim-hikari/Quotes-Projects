@@ -1,0 +1,24 @@
+body {
+    background-color: darkcyan;
+}
+
+h2 {
+    font-family: 'ZCOOL XiaoWei', serif;
+    margin-top: 7%;
+    margin-bottom: -17%;
+}
+
+div {
+    width: 100%;
+}
+
+form {
+    width: 100%;
+}
+
+input {
+    /* border: solid; */
+    height: 50px;
+    margin-top: 1%;
+    width: 30%;
+}

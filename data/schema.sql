@@ -1,0 +1,7 @@
+DROP TABLE IF EXISTS userName;
+
+CREATE TABLE userName
+(
+    id SERIAL PRIMARY KEY,
+    names VARCHAR(255)
+);

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Testing area
+        </h1>
+    </header>
+    <main>
+        <% pic.data.forEach(one => { %>
+        <img src="<%= one.images.downsized.url%>" alt="one.title">
+        <h3><%= one.title%></h3>
+        <% }) %>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
